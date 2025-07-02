@@ -131,6 +131,32 @@ This endpoint demonstrates:
 
 ## Development
 
+### HTTPS Development Certificate
+
+Before running the API, ensure you have a valid HTTPS development certificate installed and trusted:
+
+```powershell
+# Check if a valid certificate exists
+dotnet dev-certs https --check
+
+# Check if the certificate is trusted
+dotnet dev-certs https --check --trust
+
+# If no certificate exists, create and trust one
+dotnet dev-certs https --trust
+```
+
+Expected output for a properly configured certificate:
+
+```text
+PS D:\STSA\datingapp-course> dotnet dev-certs https --check
+A valid certificate was found: 36667FA153D45489BE53860872D5F693E20C9577 - CN=localhost - Valid from 2024-12-27 23:03:40Z to 2025-12-27 23:03:40Z - IsHttpsDevelopmentCertificate: true - IsExportable: true
+Run the command with both --check and --trust options to ensure that the certificate is not only valid but also trusted.
+
+PS D:\STSA\datingapp-course> dotnet dev-certs https --check --trust
+A trusted certificate was found: 36667FA153D45489BE53860872D5F693E20C9577 - CN=localhost - Valid from 2024-12-27 23:03:40Z to 2025-12-27 23:03:40Z - IsHttpsDevelopmentCertificate: true - IsExportable: true
+```
+
 ### Running the API
 
 ```powershell
