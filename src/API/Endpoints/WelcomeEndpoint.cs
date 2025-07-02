@@ -1,12 +1,6 @@
-namespace API.Endpoints;
+using API.Models;
 
-/// <summary>
-/// Response model for the welcome endpoint
-/// </summary>
-public sealed record WelcomeResponse(
-    string Message,
-    DateTime Timestamp,
-    Guid RequestId);
+namespace API.Endpoints;
 
 /// <summary>
 /// Welcome endpoint for the Dating App API

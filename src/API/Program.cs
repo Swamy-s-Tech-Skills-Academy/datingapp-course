@@ -1,5 +1,5 @@
-using Scalar.AspNetCore;
 using API.Endpoints;
+using Scalar.AspNetCore;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
