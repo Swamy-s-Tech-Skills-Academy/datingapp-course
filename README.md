@@ -84,13 +84,42 @@ dotnet run --project src/API
 - [ ] Admin Panel
 - [x] OpenAPI Documentation
 - [x] Scalar API Explorer
+- [x] Welcome Endpoint
 
 ## API Endpoints
 
-> 1. [Open API](https://localhost:7007/openapi/v1.json)
-> 1. [Scalar](https://localhost:7007/scalar/v1)
+### Available Endpoints
+
+| Method | Endpoint           | Description         | Response                                     |
+| ------ | ------------------ | ------------------- | -------------------------------------------- |
+| GET    | `/`                | Welcome message     | JSON with message, timestamp, and request ID |
+| GET    | `/weatherforecast` | Sample weather data | JSON array of weather forecasts              |
+
+### API Documentation
+
+> 1. [Open API Specification](https://localhost:7007/openapi/v1.json)
+> 1. [Scalar API Explorer](https://localhost:7007/scalar/v1)
 
 ![Scalar UI](./docs/images/Scalar_UI.PNG)
+
+### Welcome Endpoint Example
+
+The root endpoint (`/`) returns a JSON response with the following structure:
+
+```json
+{
+  "message": "Welcome to Dating App API",
+  "timestamp": "2025-07-02T10:30:45.123Z",
+  "requestId": "123e4567-e89b-12d3-a456-426614174000"
+}
+```
+
+This endpoint demonstrates:
+
+- **Modern .NET Minimal APIs** with proper OpenAPI documentation
+- **Strongly-typed responses** using record types
+- **Clean architecture** with separated endpoint definitions
+- **Comprehensive API documentation** with Scalar UI
 
 ## Development
 
@@ -112,7 +141,7 @@ The API will be available at:
 - HTTPS: `https://localhost:7007`
 - HTTP: `http://localhost:5228`
 
-### API Documentation
+### Development API Documentation
 
 - **OpenAPI Specification**: `/openapi/v1.json`
 - **Scalar API Explorer**: `/scalar/v1` (Development only)
