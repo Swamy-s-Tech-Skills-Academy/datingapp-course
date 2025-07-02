@@ -14,3 +14,15 @@
 🚀 The project emphasizes clean architecture, secure authentication, rich user profiles, and scalable design patterns—ideal for full-stack developers aiming to sharpen practical skills.
 
 🔗 Inspired by [Neil Cummings’ DatingApp course and source code](https://github.com/TryCatchLearn/DatingApp)
+
+## How to create this solution
+
+```powershell
+dotnet --info
+
+dotnet new list
+
+dotnet new sln
+
+dotnet new webapi -controllers -n API
+```
