@@ -27,4 +27,6 @@ dotnet new sln
 
 dotnet new webapi -controllers -n API
 dotnet sln add .\src\API\
+
+dotnet sln list
 ```
