@@ -25,7 +25,7 @@ dotnet new list
 dotnet sln -h
 dotnet new sln
 
-dotnet new webapi -controllers -n API
+dotnet new webapi -controllers -n API -f net9.0
 dotnet sln add .\src\API\
 
 dotnet sln list
