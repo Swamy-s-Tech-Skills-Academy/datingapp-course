@@ -30,3 +30,10 @@ dotnet sln add .\src\API\
 
 dotnet sln list
 ```
+
+## API Endpoints
+
+> 1. [Open API](https://localhost:7007/openapi/v1.json)
+> 1. [Scalar](https://localhost:7007/scalar/v1)
+
+![Scalar UI](./docs/images/Scalar_UI.PNG)
