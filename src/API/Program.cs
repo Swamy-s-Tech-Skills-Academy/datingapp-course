@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+using API.Endpoints;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.MapWelcomeEndpoint();
 
 app.MapControllers();
 
