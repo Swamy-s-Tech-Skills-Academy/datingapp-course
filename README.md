@@ -15,7 +15,7 @@ This repository contains a production-grade full-stack application developed whi
 
 🚀 The project emphasizes clean architecture, secure authentication, rich user profiles, and scalable design patterns—ideal for full-stack developers aiming to sharpen practical skills.
 
-🔗 Inspired by [Neil Cummings' DatingApp course and source code](https://github.com/TryCatchLearn/DatingApp)
+### 🔗 Inspired by [Neil Cummings' DatingApp course and source code](https://github.com/TryCatchLearn/DatingApp)
 
 ## Prerequisites
 
