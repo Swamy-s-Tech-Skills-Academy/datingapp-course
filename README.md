@@ -114,6 +114,14 @@ The root endpoint (`/`) returns a JSON response with the following structure:
 }
 ```
 
+#### Testing the Welcome Endpoint
+
+You can test the welcome endpoint using PowerShell:
+
+```powershell
+curl -k https://localhost:7007/ | ConvertFrom-Json | ConvertTo-Json -Depth 3
+```
+
 This endpoint demonstrates:
 
 - **Modern .NET Minimal APIs** with proper OpenAPI documentation
