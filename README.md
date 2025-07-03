@@ -30,7 +30,7 @@ This repository contains a production-grade full-stack application developed whi
 2. Navigate to the project directory
 3. Restore dependencies: `dotnet restore`
 4. Run the API: `dotnet run --project src/API`
-5. Open browser to: `https://localhost:7007/scalar/v1`
+5. Open browser to: `https://localhost:5001/scalar/v1` OR `https://localhost:5001/openapi/v1.json`
 
 ## Project Setup Instructions
 
