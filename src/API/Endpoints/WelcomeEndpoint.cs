@@ -1,4 +1,5 @@
 using API.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace API.Endpoints;
 
@@ -29,7 +30,7 @@ public static class WelcomeEndpoint
     /// Handles the welcome endpoint request
     /// </summary>
     /// <returns>Welcome response with message, timestamp and request ID</returns>
-    private static IResult GetWelcomeMessage()
+    private static Ok<WelcomeResponse> GetWelcomeMessage()
     {
         var response = new WelcomeResponse(
             Message: "Welcome to Dating App API",

@@ -57,7 +57,7 @@ dotnet sln list
 dotnet restore
 
 # Run the application
-dotnet run --project src/API
+dotnet watch --project .\src\API\
 ```
 
 ## Project Structure
