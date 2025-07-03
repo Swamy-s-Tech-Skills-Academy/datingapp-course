@@ -37,6 +37,7 @@ This repository contains a production-grade full-stack application developed whi
 ```powershell
 # Check .NET version
 dotnet --info
+dontnet -h
 
 # List available templates
 dotnet new list
